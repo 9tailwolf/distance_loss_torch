@@ -1,5 +1,5 @@
-# DistanceLoss
-The Official Repository for Distance Loss Function
+# distance_loss_torch
+The Official Repository for Distance Loss Function with pytorch.
 
 ## Distance Loss Function
 Distance loss function based on weighted mean square error. It can apply to monotonic classificaiton. There is a two types of Distance Loss, `Distance Mean Square`(DiMS), and `Absolute Distance Mean Square`(ADiMS). Below is a formula of DiMS.
