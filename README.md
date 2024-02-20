@@ -29,6 +29,18 @@ You can use distance loss function by using pypi package. Please type below on y
 pip install distance_loss_torch
 ```
 
+```python
+from distanceLoss import DiMSLoss
+
+model = Model()
+loss_fn = DiMSLoss()
+'''
+Your Model
+'''
+y_pred = model(x_train)
+loss = loss_fn(y_pred, y_train)
+loss.backward()
+```
 ## Implements of distance loss function
 - [Distance-Loss-Experiments](https://github.com/9tailwolf/Distance-Loss-Experiments) : The official repository for optain experimental performance result on distance loss functions.
 - [Distance-Loss-Experiments_SST-5](https://github.com/9tailwolf/Distance-Loss-Experiment_SST-5) : The official repository for achieve score on SST-5 semantic analysis. 
