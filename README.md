@@ -2,7 +2,7 @@
 The Official Repository for Distance Loss Function with pytorch.
 
 ## Distance Loss Function
-Distance loss function based on weighted mean square error. It can apply to monotonic classificaiton. There is a two types of Distance Loss, `Distance Mean Square`(DiMS). Below is a formula of DiMS.
+Distance loss function based on weighted mean square error. It can apply to `monotonic classificaiton`. Below is a formula of `Distance Mean Square(DiMS)` loss function.
 
 $$
 L_{DiMS} = \frac{1}{nl}\sum\limits_{i=1}^{n} \sum\limits_{j=1}^{l} (\lvert A(T_{i}) - j \rvert + 1)^{\alpha} (T_{ij} - Y_{ij})^{2}
@@ -18,6 +18,7 @@ $$
 S = \lbrace s|1 \leq s \leq l, s \in N\rbrace
 $$
 
+$\alpha$ is a hyper-parameter for tuning. It can determine experimentally.
 ## How to Use
 You can use distance loss function by using pypi package. Please type below on your terminal.
 
