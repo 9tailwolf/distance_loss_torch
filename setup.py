@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='distance_loss_torch',
-    version='0.0.6',
+    version='0.1.0',
     description='Distance Loss function package for pytorch',
     author='9tailwolf',
     author_email='doryeon514@gmail.com',
