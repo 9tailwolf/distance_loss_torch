@@ -27,7 +27,7 @@ pip install distance_loss_torch
 ```
 
 ```python
-from distanceLoss import DiMSLoss
+from distanceloss import DiMSLoss
 
 model = Model()
 loss_fn = DiMSLoss(alpha = 2)
@@ -39,5 +39,27 @@ loss = loss_fn(y_pred, y_train)
 loss.backward()
 ```
 ## Implements of distance loss function
-- [Distance-Loss-Experiments](https://github.com/9tailwolf/Distance-Loss-Experiments) : The official repository for optain experimental performance result on distance loss functions.
-- [Distance-Loss-Experiments_SST-5](https://github.com/9tailwolf/Distance-Loss-Experiment_SST-5) : The official repository for achieve score on SST-5 semantic analysis. 
+
+You can run experiment code by type below.
+
+#### scikit_classification
+
+```bash
+python src/scikit_classification/scikit_classification.py --loss=dims --label=10 --alpha=2 --seed=0 --ratio=0.8
+```
+
+#### SST-5
+
+```bash
+python src/SST-5/run.py --loss=dims --alpha=2 --seed=0 --bert=roberta --save=True --lr=1e-6
+```
+
+#### ESRC
+
+You cannot run ESRC code due to private dataset, but here is the executable code for ESRC when dataset exist.
+
+```bash
+python src/ESRC/run.py --loss=dims --alpha=2 --seed=0 --bert=roberta --save=True
+```
+
+
