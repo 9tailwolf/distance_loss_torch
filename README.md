@@ -45,7 +45,7 @@ You can run experiment code by type below.
 #### scikit_classification
 
 ```bash
-python src/scikit_classification/scikit_classification.py --loss=dims --label=10 --alpha=2 --seed=0 --ratio=0.8
+python src/scikit_classification/run.py --loss=dims --label=10 --alpha=2 --seed=0 --ratio=0.8
 ```
 
 #### SST-5
